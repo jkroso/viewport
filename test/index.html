@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<title>viewport demo</title>
+		<script src="../build/build.js"></script>
+		<style>
+		body {
+			height: 1000px;
+			width: 1000px;
+		}
+		ul {
+			position: fixed;
+			left: 50px;
+			top:50px;
+			list-style-type: square;
+		}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li id="top"></li>
+			<li id="right"></li>
+			<li id="bottom"></li>
+			<li id="left"></li>
+			<li id="width"></li>
+			<li id="height"></li>
+		</ul>
+		<script>
+		var viewport = require('viewport')
+		var list = document.getElementsByTagName('ul')[0]
+		viewport.on('resize | scroll', showState)
+		function showState () {
+			Array.apply(null, list.children).forEach(function (item) {
+				item.innerText = item.id+': '+viewport[item.id]
+			})
+		}
+		showState()
+		</script>
+	</body>
+</html>

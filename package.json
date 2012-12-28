@@ -1,0 +1,25 @@
+{
+  "name": "viewport",
+  "version": "0.1.0",
+  "description": "represents the browsers viewport in a more useful way",
+  "main": "src/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "laissez-faire": "*"
+  },
+  "scripts" : {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jkroso/viewport.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jkroso/viewport/issues"
+  },
+  "keywords": ["state", "events", "viewport", "window", "resize", "scroll"],
+  "author": "Jakeb Rosoman",
+  "license": "MIT"
+}
