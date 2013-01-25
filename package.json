@@ -1,13 +1,15 @@
 {
   "name": "viewport",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "represents the browsers viewport in a more useful way",
   "main": "src/index.js",
-  "dependencies": {},
+  "dependencies": {
+    "emitter": "https://github.com/jkroso/Emitter/tarball/master",
+    "events": "https://github.com/component/events/tarball/master"
+  },
   "devDependencies": {
     "mocha": "*",
-    "chai": "*",
-    "laissez-faire": "*"
+    "chai": "*"
   },
   "scripts" : {
     "test": "make test"

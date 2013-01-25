@@ -26,15 +26,18 @@
 			<li id="height"></li>
 		</ul>
 		<script>
-		var viewport = require('viewport')
-		var list = document.getElementsByTagName('ul')[0]
-		viewport.on('resize | scroll', showState)
-		function showState () {
-			Array.apply(null, list.children).forEach(function (item) {
-				item.innerText = item.id+': '+viewport[item.id]
-			})
-		}
-		showState()
+			var viewport = require('viewport')
+			var list = document.getElementsByTagName('ul')[0]
+			
+			viewport.on('resize', showState)
+			viewport.on('scroll', showState)
+
+			function showState () {
+				Array.apply(null, list.children).forEach(function (item) {
+					item.innerText = item.id+': '+viewport[item.id]
+				})
+			}
+			showState()
 		</script>
 	</body>
 </html>
