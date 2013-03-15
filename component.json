@@ -8,10 +8,8 @@
     "component/event": "*",
     "jkroso/emitter": "*"
   },
-  "main": "src/index.js",
   "scripts": [
-	  "src/index.js"
+	  "index.js"
   ],
-  "styles":[],
   "license": "MIT"
 }

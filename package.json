@@ -2,9 +2,8 @@
   "name": "viewport",
   "version": "0.1.1",
   "description": "represents the browsers viewport in a more useful way",
-  "main": "src/index.js",
   "dependencies": {
-    "emitter": "https://github.com/jkroso/Emitter/tarball/master",
+    "emitter": "https://github.com/jkroso/Emitter/tarball/0.6.1",
     "events": "https://github.com/component/events/tarball/master"
   },
   "devDependencies": {
