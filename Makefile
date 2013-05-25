@@ -1,4 +1,4 @@
-all: install build test
+all: install build
 
 build:
 	@component build -d -v
@@ -7,14 +7,6 @@ install:
 	@component install
 
 clean:
-	@rm -rf build components
+	@rm -r build components
 
-test:
-	@google-chrome test/index.html
-
-docs:
-	@cat docs/head.md > Readme.md
-	@dox --api < src/index.js >> Readme.md
-	@cat docs/tail.md >> Readme.md
-
-.PHONY: all install build test clean docs
+.PHONY: all install build clean

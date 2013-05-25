@@ -5,8 +5,8 @@
   "version": "0.1.1",
   "keywords": ["state", "events", "viewport", "window", "resize", "scroll"],
   "dependencies": {
-    "component/event": "*",
-    "jkroso/emitter": "*"
+    "component/event": "0.1.0",
+    "jkroso/emitter": "0.6.3"
   },
   "scripts": [
 	  "index.js"
