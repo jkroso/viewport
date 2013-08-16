@@ -1,6 +1,6 @@
 {
   "name": "viewport",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "represents the browsers viewport in a more useful way",
   "dependencies": {
     "emitter": "http://github.com/jkroso/Emitter/tarball/0.7.0",

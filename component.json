@@ -2,7 +2,7 @@
   "name": "viewport",
   "repo": "jkroso/viewport",
   "description": "represents the browsers viewport in a more useful way",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "keywords": [
     "state",
     "events",
