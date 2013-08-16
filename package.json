@@ -1,10 +1,10 @@
 {
   "name": "viewport",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "represents the browsers viewport in a more useful way",
   "dependencies": {
-    "emitter": "https://github.com/jkroso/Emitter/tarball/0.6.3",
-    "events": "https://github.com/component/events/tarball/master"
+    "emitter": "http://github.com/jkroso/Emitter/tarball/0.7.0",
+    "events": "http://github.com/component/events/tarball/0.1.0"
   },
   "repository": {
     "type": "git",
