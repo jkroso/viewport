@@ -1,19 +1,19 @@
 
+var Emitter = require('emitter')
 var events = require('event')
-  , emitter = require('emitter')
 
 // mixin emitter
-emitter(exports)
+Emitter(exports)
 
 var html = document.getElementsByTagName('html')[0]
 
-events.bind(window, 'resize', function (e) {
+events.bind(window, 'resize', function(e){
 	size()
 	position()
 	exports.emit('resize', exports)
 })
 
-events.bind(window, 'scroll', function () {
+events.bind(window, 'scroll', function(){
 	position()
 	exports.emit('scroll', exports)
 })
@@ -29,7 +29,7 @@ position()
  * Update the size attributes
  */
 
-function size () {
+function size(){
 	exports.height = html.clientHeight
 	exports.width = html.clientWidth
 }
@@ -38,7 +38,7 @@ function size () {
  * Update the position attributes
  */
 
-function position () {
+function position(){
 	exports.top = window.scrollY
 	exports.left = window.scrollX
 	exports.right = exports.left + exports.width
