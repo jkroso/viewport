@@ -2,7 +2,7 @@
   "name": "viewport",
   "repo": "jkroso/viewport",
   "description": "represents the browsers viewport in a more useful way",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "keywords": [
     "state",
     "events",
@@ -14,6 +14,9 @@
   "dependencies": {
     "component/event": "0.1.0",
     "jkroso/emitter": "0.7.0"
+  },
+  "development": {
+    "jkroso/serve": "1.4.8"
   },
   "scripts": [
     "index.js"

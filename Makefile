@@ -1,12 +1,12 @@
-all: install build
 
-build:
-	@component build -d -v
+serve: node_modules
+	@node_modules/serve/bin/serve -Slojp 0
 
-install:
-	@component install
+node_modules: component.json package.json
+	@packin install \
+		--meta package.json,component.json,deps.json \
+		--folder node_modules \
+		--executables \
+		--no-retrace
 
-clean:
-	@rm -r build components
-
-.PHONY: all install build clean
+.PHONY: serve

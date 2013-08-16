@@ -4,7 +4,7 @@
   "description": "represents the browsers viewport in a more useful way",
   "dependencies": {
     "emitter": "http://github.com/jkroso/Emitter/tarball/0.7.0",
-    "events": "http://github.com/component/events/tarball/0.1.0"
+    "event": "http://github.com/component/event/tarball/0.1.0"
   },
   "repository": {
     "type": "git",
