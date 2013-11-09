@@ -3,8 +3,8 @@
   "version": "0.1.4",
   "description": "represents the browsers viewport in a more useful way",
   "dependencies": {
-    "emitter": "http://github.com/jkroso/Emitter/tarball/0.7.0",
-    "event": "http://github.com/component/event/tarball/0.1.0"
+    "emitter": "http://github.com/jkroso/Emitter/tarball/0.9.0",
+    "event": "http://github.com/component/event/tarball/0.1.1"
   },
   "repository": {
     "type": "git",
