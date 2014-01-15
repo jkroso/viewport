@@ -2,23 +2,11 @@
   "name": "viewport",
   "repo": "jkroso/viewport",
   "description": "represents the browsers viewport in a more useful way",
-  "keywords": [
-    "state",
-    "events",
-    "viewport",
-    "window",
-    "resize",
-    "scroll"
-  ],
+  "keywords": ["viewport", "window", "resize", "scroll"],
   "dependencies": {
-    "component/event": "0.1.1",
-    "jkroso/emitter": "0.9.0"
+    "component/event": "0.1.2",
+    "jkroso/emitter": "0.10.0"
   },
-  "development": {
-    "jkroso/serve": "1.5.1"
-  },
-  "scripts": [
-    "index.js"
-  ],
+  "scripts": ["index.js"],
   "license": "MIT"
 }
