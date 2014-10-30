@@ -1,16 +1,14 @@
 {
   "name": "viewport",
-  "version": "0.1.6",
+  "version": "1.0.0",
   "description": "represents the browsers viewport in a more useful way",
   "dependencies": {
-    "emitter": "jkroso/Emitter#0.10.0",
-    "event": "component/event#0.1.2"
+    "emitter": "jkroso/Emitter"
   },
   "devDependencies": {
-    "serve": "jkroso/serve#1.5.1"
+    "serve": "jkroso/serve"
   },
   "repository": "git://github.com/jkroso/viewport.git",
-  "bugs": "https://github.com/jkroso/viewport/issues",
   "keywords": ["state", "events", "viewport", "window", "resize", "scroll"],
   "author": "Jakeb Rosoman",
   "files": ["index.js"],

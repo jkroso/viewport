@@ -4,8 +4,7 @@
   "description": "represents the browsers viewport in a more useful way",
   "keywords": ["viewport", "window", "resize", "scroll"],
   "dependencies": {
-    "component/event": "0.1.2",
-    "jkroso/emitter": "0.10.0"
+    "jkroso/emitter": "*"
   },
   "scripts": ["index.js"],
   "license": "MIT"
