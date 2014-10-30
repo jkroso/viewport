@@ -1,22 +1,20 @@
-
 var Emitter = require('emitter')
-var events = require('event')
 
 // mixin emitter
 Emitter(exports)
 
 var html = document.getElementsByTagName('html')[0]
 
-events.bind(window, 'resize', function(e){
+window.addEventListener('resize', function(e){
   size()
   position()
   exports.emit('resize', exports)
-})
+}, true)
 
-events.bind(window, 'scroll', function(){
+window.addEventListener('scroll', function(){
   position()
   exports.emit('scroll', exports)
-})
+}, true)
 
 /**
  * Initialise
