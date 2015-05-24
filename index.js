@@ -1,44 +1,18 @@
-var Emitter = require('emitter')
+var Cell = require('cell')
 
-// mixin emitter
-Emitter(exports)
-
-var html = document.getElementsByTagName('html')[0]
-
-window.addEventListener('resize', function(e){
-  size()
-  position()
-  exports.emit('resize', exports)
-}, true)
-
-window.addEventListener('scroll', function(){
-  position()
-  exports.emit('scroll', exports)
-}, true)
-
-/**
- * Initialise
- */
-
-size()
-position()
-
-/**
- * Update the size attributes
- */
-
-function size(){
-  exports.height = html.clientHeight
-  exports.width = html.clientWidth
+function Viewport() {
+  this.top = window.scrollY
+  this.left = window.scrollX
+  this.width = window.innerWidth
+  this.height = window.innerHeight
+  this.right = this.left + this.width
+  this.bottom = this.top + this.height
 }
 
-/**
- * Update the position attributes
- */
+var viewport = new Cell(new Viewport)
 
-function position(){
-  exports.top = window.scrollY
-  exports.left = window.scrollX
-  exports.right = exports.left + exports.width
-  exports.bottom = exports.top + exports.height
-}
+function onChange() { viewport.set(new Viewport) }
+window.addEventListener('resize', onChange, true)
+window.addEventListener('scroll', onChange, true)
+
+module.exports = viewport

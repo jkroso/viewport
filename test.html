@@ -27,13 +27,12 @@
   var viewport = require('./')
   var list = document.getElementsByTagName('ul')[0]
 
-  viewport.on('resize', showState)
-  viewport.on('scroll', showState)
-
-  function showState(){
+  function onChange(size){
     Array.apply(null, list.children).forEach(function(item){
-      item.innerText = item.id+': '+viewport[item.id]
+      item.innerText = item.id + ': ' + size[item.id]
     })
   }
-  showState()
+
+  viewport.addListener(onChange)
+  onChange(viewport.value)
 </script>

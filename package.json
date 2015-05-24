@@ -1,9 +1,9 @@
 {
   "name": "viewport",
-  "version": "1.0.0",
-  "description": "represents the browsers viewport in a more useful way",
+  "version": "2.0.0",
+  "description": "represents the browsers viewport as a signal changing over time",
   "dependencies": {
-    "emitter": "jkroso/Emitter"
+    "cell": "jkroso/cell"
   },
   "devDependencies": {
     "serve": "jkroso/serve"
